@@ -1,0 +1,63 @@
+body {
+  background-color: hsl(0, 0%, 89%);
+}
+
+.chart__chart.pie {
+  max-width: 480px;
+  height: 400px;
+}
+
+.chart {
+  display: flex;
+  max-width: 960px;
+  margin: 50px auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bar p {
+  line-height: 15px;
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.chart__input_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.chart__input_form input:active,
+.chart__input_form input:focus,
+.chart__input_form input:hover {
+  outline: #626262;
+}
+
+.chart__input_form input {
+  margin: 5px;
+}
+
+.chart__input_buttons {
+  display: flex;
+  height: 30px;
+  margin: 5px;
+}
+
+.btn {
+  outline: none;
+  background: none;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #8f8f8f;
+}
+
+.btn-add {
+  flex-grow: 2;
+}
+
+.btn-del {
+  flex-grow: 1;
+}

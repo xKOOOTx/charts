@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+    <script src="scripts/sampleData.js"></script>
+    <title>Building charts</title>
+  </head>
+  <body>
+    <div class="chart">
+      <div class="chart__info">
+        <h3>Chart one:</h3>
+        <p><strong> the sample data,</strong></p>
+        <p>Realestate: 18.05%</p>
+        <p>Utilities: 22.33%</p>
+        <p>Materials: 3.97%</p>
+        <p>Healthcare: 19.24%</p>
+        <p>Finance: 5.11%</p>
+        <p>Energy: 11.74%</p>
+        <p>Industrials: 3.01%</p>
+        <p>Consumer Discretionary: 11.13%</p>
+        <p>Other: Remaining %</p>
+      </div>
+      <div class="chart__chart pie">
+        <canvas id="pie" width="480" height="400"></canvas>
+      </div>
+    </div>
+    <div class="chart bar">
+      <div class="chart__info">
+        <div class="chart__input">
+          <form action="/" class="chart__input_form form">
+            <select id="period">
+              <option value="winter">December</option>
+              <option value="winter">January</option>
+              <option value="winter">February</option>
+              <option value="spring">March</option>
+              <option value="spring">April</option>
+              <option value="spring">May</option>
+              <option value="summer">June</option>
+              <option value="summer">July</option>
+              <option value="summer">August</option>
+              <option value="autumn">September</option>
+              <option value="autumn">October</option>
+              <option value="autumn">November</option>
+            </select>
+            <input type="number" placeholder="Positive value" id="positiveInput" required>
+            <input type="number" placeholder="Negative value" id="negativeInput" required>
+            <div class="chart__input_buttons">
+              <button class="btn btn-add" type="button" id="addBtn">+Add positive Quarter</button>
+              <button class="btn btn-del" id="clearBtn">&#10005;</button>
+            </div>
+          </form>
+        </div>
+        <h3>Chart two:</h3>
+        <p><strong> the sample data,</strong></p>
+        <p>2013:</p>
+        <p>Autumn 2013: 550 opened positions, 740 closed positions</p>
+        <p>Winter 2013: 680 opened positions, 300 closed positions</p>
+        <p>Spring 2013: 1200 opened positions, 50 closed positions</p>
+        <p>Summer 2013: 1500 opened positions, 210 closed positions</p>
+        <p>2014:</p>
+        <p>Autumn 2014: 1100 opened positions, 350 closed positions</p>
+        <p>Winter 2014: 800 opened positions, 600 closed positions</p>
+        <p>Spring 2014: 650 opened positions, 350 closed positions</p>
+        <p>Summer 2014: 940 opened positions, 485 closed positions</p>
+        <p>2015:</p>
+        <p>Autumn 2015: 1100 opened positions, 700 closed positions</p>
+        <p>Winter 2015: 830 opened positions, 1050 closed positions</p>
+        <p>Spring 2015: 650 opened positions, 1520 closed positions</p>
+        <p>Summer 2015: 450 opened positions, 1680 closed positions</p>
+        <p>2016:</p>
+        <p>Autumn 2016: 500 opened positions, 500 closed positions</p>
+        <p>Winter 2016: 420 opened positions, 380 closed positions</p>
+        <p>Spring 2016: 800 opened positions, 650 closed positions</p>
+        <p>Summer 2016: 900 opened positions, 1000 closed positions</p>
+      </div>
+      <div class="chart__chart bar">
+        <canvas id="bar" width="360" height="150"></canvas>
+      </div>
+    </div>
+<!--    <div class="chart bar">
+      <div class="chart__info"></div>
+      <div class="chart__chart bar">
+        <canvas id="bar" width="480" height="250"></canvas>
+      </div>
+    </div>-->
+
+    <script src="scripts/ChartScripts.js"></script>
+    <script src="scripts/addSampleData.js"></script>
+    <script src="getJson.js"></script>
+    <!-- <script src="scripts/ChartOne.js"></script> -->
+  </body>
+</html>
