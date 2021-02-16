@@ -16,7 +16,4 @@ fetch(url)
     .then(response => response.json())
     .then(oldBarChartData => newBarChartData.unshift(oldBarChartData))
 
-console.log(newBarChartData);
-
-
 
