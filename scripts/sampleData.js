@@ -20,7 +20,7 @@ var pieDataObject = {
   ).toFixed(2),
 };
 
-var barChartData = [
+/*var barChartData = [
   {
     period: "autumn 2013",
     openedPositions: 550,
@@ -117,11 +117,4 @@ var barChartData = [
     closedPositions: 1000,
     stack: "2016d",
   },
-];
-
-let barChartDataJson = JSON.stringify(barChartData)
-
-let jsonParse = JSON.parse(barChartDataJson)
-
-console.log(barChartData);
-console.log(jsonParse);
+];*/

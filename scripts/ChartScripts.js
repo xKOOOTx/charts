@@ -161,7 +161,8 @@
   );
   var ChartTwoInstance = new Grafico(
     "bar",
-    barChartData,
+      newBarChartData,
+    // barChartData,
     "Anthony's bar chart sample Data"
   );
   var newObj = ChartTwoInstance.createChart();
