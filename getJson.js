@@ -11,9 +11,12 @@
 //
 // console.log(json);
 
-const url = 'https://xkoootx.github.io/charts/barChartData.json'
-let newBarChartData = fetch(url)
+const url = 'https://xkoootx.github.io/charts//barChartData.json'
+fetch(url)
     .then(response => response.json())
-    .then(json => console.log(json))
+    .then(oldBarChartData => newBarChartData.unshift(oldBarChartData))
+
+console.log(newBarChartData);
+
 
 

@@ -20,6 +20,8 @@ var pieDataObject = {
   ).toFixed(2),
 };
 
+const newBarChartData = [];
+console.log(newBarChartData);
 /*var barChartData = [
   {
     period: "autumn 2013",
