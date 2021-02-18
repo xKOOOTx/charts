@@ -20,9 +20,9 @@ var pieDataObject = {
   ).toFixed(2),
 };
 
-const newBarChartData = [];
-console.log(newBarChartData);
-/*var barChartData = [
+// const newBarChartData = [];
+// console.log(newBarChartData);
+var barChartData = [
   {
     period: "autumn 2013",
     openedPositions: 550,
@@ -119,4 +119,4 @@ console.log(newBarChartData);
     closedPositions: 1000,
     stack: "2016d",
   },
-];*/
+];

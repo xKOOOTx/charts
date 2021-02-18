@@ -50,7 +50,7 @@
         type: this.paramType,
         title: this.title,
         data: {
-          labels: ["2012             2013             2014             2015              2016"],
+          labels: ["2013             2014             2015              2016"],
           datasets: myArr,
           barPercentage: 0.57,
         },
@@ -161,8 +161,7 @@
   );
   var ChartTwoInstance = new Grafico(
     "bar",
-      newBarChartData,
-    // barChartData,
+      barChartData,
     "Anthony's bar chart sample Data"
   );
   var newObj = ChartTwoInstance.createChart();
